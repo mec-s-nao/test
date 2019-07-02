@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+img{
+	vertical-align:bottom;
+	width: 100%;}
+/**Common Class*******************/
+.clearfix {	zoom: 1;/*IE7対応用*/}
+/*:after はIE7だと動作しないようなので　注意　今回は念のため上記.clearと両方使う形で？*/
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;}
+.left{float:left;}
+.right{float:right;}
+.big{font-size:120%;
+	font-weight: bold;}
+.red{color:#FF0000;}
+.mt10{margin-top:10px;}
+.mt20{margin-top:20px;}
+.mb10{margin-bottom:10px;}
+.mb20{margin-bottom:20px;}
+.mcenter{margin:0 auto;}
+.textcenter{text-align: center;}
+.last{
+	margin:0;
+	border: 0;
+	padding: 0;
+}
+/*********************/
+.dispsp{display: none;}
+.disppc{display: block;}
+.spleft{float: none;}
+.spright{float: none;}
+.pcleft{float: left;}
+.pcright{float: right;}

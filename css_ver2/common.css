@@ -1,0 +1,338 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family: "Hiragino Mincho Pro", "ヒラギノ明朝 Pro W3", "ＭＳ 明朝", "MS PMincho", "serif";
+  background-color: #ffffcc;
+  background-image: linear-gradient(-45deg, rgba(255,255,255,.5) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.5) 50%, rgba(255,255,255,.5) 60%, transparent 60%, transparent 100%), linear-gradient(45deg, rgba(255,255,255,.5) 25%, transparent 25%, transparent 50%,  rgba(255,255,255,.5) 50%, rgba(255,255,255,.5) 60%, transparent 60%, transparent 100%);
+  background-size: 20px 20px;
+}
+/****************************/
+/*common*/
+p{
+	font-size:15px;
+	line-height:150%;
+	color:#000;}
+a{
+	transition: 0.5s;}
+a.block{
+	display:block;
+}
+a img{}
+a:hover img{
+	opacity: 0.7;
+}
+h1,h2,h3{
+	font-weight:bold;}
+h1{}
+h1 a{text-decoration:none;}
+h2{}
+/*
+h3{
+  background: -webkit-repeating-linear-gradient(45deg, #3498db, #3498db 5px, #69b4e6 5px, #69b4e6 10px);
+  background: repeating-linear-gradient(45deg, #3498db, #3498db 5px, #69b4e6 5px, #69b4e6 10px);
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+	height: 30px;
+	line-height: 30px;
+	text-indent: 1em;
+	font-size: 20px;
+	border-radius:5px 5px 0 0;
+}
+*/
+h3{}
+.top h3{
+	width: 100%;
+	position: relative;
+	display: block;
+	font-family:"Hiragino Mincho Pro", "ヒラギノ明朝 Pro W3", "ＭＳ 明朝", "MS PMincho", "serif";
+	text-align: center;	
+    font-size: 30px;
+	font-style: italic;
+    margin-bottom: 40px;
+	color: #333;
+	z-index: 100;
+    padding-top: 20px;
+}
+.top h3::after{
+content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 2px;
+    width: 350px;
+	z-index: 10;
+    background-image: linear-gradient(90deg, 
+		RGBA(102, 102, 102, 0.0) 0%, 
+		RGBA(102, 102, 102, 1.0) 45%,
+		RGBA(102, 102, 102, 1.0) 55%, 
+		RGBA(102, 102, 102, 0.0) 100%);
+}
+.top h3 span{
+	font-family:"Hiragino Mincho Pro", "ヒラギノ明朝 Pro W3", "ＭＳ 明朝", "MS PMincho", "serif";
+	display: block;
+    font-size: 15px;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+	color: #333;
+}
+#pagetext h3{
+}
+#pagetext h3::after{
+}
+#pagetext h3 span{
+}
+.page h4{
+	width: 100%;
+	position: relative;
+	display: block;
+	font-family:"Hiragino Mincho Pro", "ヒラギノ明朝 Pro W3", "ＭＳ 明朝", "MS PMincho", "serif";
+	text-align: center;	
+    font-size: 30px;
+	font-style: italic;
+    margin-bottom: 40px;
+	color: #333;
+	z-index: 100;
+    padding-top: 20px;
+}
+.page h4::after{
+content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 2px;
+    width: 350px;
+	z-index: 10;
+    background-image: linear-gradient(90deg, 
+		RGBA(102, 102, 102, 0.0) 0%, 
+		RGBA(102, 102, 102, 1.0) 45%,
+		RGBA(102, 102, 102, 1.0) 55%, 
+		RGBA(102, 102, 102, 0.0) 100%);
+}
+.page h4 span{
+	font-family:"Hiragino Mincho Pro", "ヒラギノ明朝 Pro W3", "ＭＳ 明朝", "MS PMincho", "serif";
+	display: block;
+    font-size: 15px;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+	color: #333;
+}
+/**************************/
+.wrapper{
+	width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;}
+section{}
+/**********************/
+.topcontent{
+	/*background-image: url(../img/slideback.jpg);*/
+	background-image: url(../newimg/bg.gif);
+    background-position: bottom center;
+    background-size: contain;
+    background-attachment: inherit;
+    background-repeat: repeat-x;
+}
+
+header{
+	/*
+background: rgb(228,245,252); 
+background: -moz-linear-gradient(top, rgba(255,255,255,1.0) 25%, rgba(42,176,237,0.6) 100%); 
+background: -webkit-linear-gradient(top, rgba(255,255,255,1.0) 25%,rgba(42,176,237,0.6) 100%); 
+background: linear-gradient(to bottom, rgba(255,255,255,1.0) 25%,rgba(42,176,237,0.6) 100%);
+	*/
+	background-color: rgba(255,255,255,0.7);
+	box-shadow: 0 1px 5px 1px #999;
+	position: relative;
+	z-index: 1000;
+}
+header #infomation{
+	position: relative;
+	height: 100px;
+	overflow: hidden;
+}
+header #infomation a.logo{
+	position: absolute;
+	top: 15px;
+	left: 0;
+	display: block;
+	height: 80px;
+}
+header #infomation a.logo img{
+	height: 70px;
+    width: auto;
+}
+header #infomation h1{
+    position: absolute;
+    top: 40px;
+    left: 230px;
+    color: #333;
+    font-size: 24px;
+}
+header #infomation h1 a{color: #333;}
+header #infomation h2{
+	position: absolute;
+	top: 0;
+	right: 0;
+    font-size: 13px;
+}
+header #infomation a.tel{
+	position: absolute;
+	top: 25px;
+	right: 0;
+	font-size: 43px;
+	color: #333;
+	text-decoration: none;
+}
+header #infomation a.tel i{    margin-right: 10px;}
+header #infomation .time{
+	position: absolute;
+	bottom: 5px;
+	right: 0;
+}
+
+nav.head{
+	/*
+background: rgb(109,179,242); 
+background: -moz-linear-gradient(top, rgba(109,179,242,0.7) 0%, rgba(30,105,222,0.7) 100%); 
+background: -webkit-linear-gradient(top, rgba(109,179,242,0.7) 0%,rgba(30,105,222,0.7) 100%); 
+background: linear-gradient(to bottom, rgba(109,179,242,0.7) 0%,rgba(30,105,222,0.7) 100%);
+	*/
+	background-color: rgba(255,255,255,0.7);
+	box-shadow: 0 -1px 5px 1px #999;
+	position: relative;
+	z-index: 1100;
+}
+#slideshow{
+	/*
+background: rgb(161,219,255); 
+background: -moz-linear-gradient(top, rgba(161,219,255,1) 0%, rgba(232,245,255,1) 50%, rgba(161,219,255,1) 100%); 
+background: -webkit-linear-gradient(top, rgba(161,219,255,1) 0%,rgba(232,245,255,1) 50%,rgba(161,219,255,1) 100%);
+background: linear-gradient(to bottom, rgba(161,219,255,1) 0%,rgba(232,245,255,1) 50%,rgba(161,219,255,1) 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1dbff', endColorstr='#a1dbff',GradientType=0 );
+	*/
+	background-color: rgba(255,255,230,0.5);
+	position: relative;
+	z-index: 500;
+}
+#slide{height:350px;}
+nav.head ul#nav{
+display: -webkit-flex;
+display: flex;
+-webkit-flex-wrap: nowrap;
+flex-wrap: nowrap;
+justify-content: space-between;
+    border-left: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(153,153,153,0.5);
+}
+nav.head ul#nav li{
+	display: block;
+	width: 20%;
+	height: 45px;
+}
+nav.head ul#nav li a{
+	transition: 1.0s;
+	color: #000;
+	font-style: italic;
+	text-align: center;
+	font-size: 17px;
+	display: block;
+	text-decoration: none;
+    height: 37px;
+    padding-top: 8px;
+    border-left: 1px solid rgba(153,153,153,0.5);
+    border-right: 1px solid rgba(255,255,255,0.5);
+}
+nav.head ul#nav li a:hover{
+	color: #FF0;
+}
+nav.head ul#nav li span{
+    font-size: 14px;
+    display: block;}
+/**********************/
+.headinfo
+
+
+/**********************/
+.mt50{margin-top:100px;}
+.twtr-timeline { height:auto!important; }
+.textcenter{
+	text-align: center;}
+/***************************/
+/***************************/
+footer{
+	margin-top: 30px;
+	padding-top: 10px;
+	/*background-color: rgba(195,133,0,0.90);*/
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fff7f0+0,fff1d4+100 */
+background: #fff7f0; /* Old browsers */
+background: -moz-linear-gradient(top, #fff7f0 0%, #fff1d4 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #fff7f0 0%,#fff1d4 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #fff7f0 0%,#fff1d4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff7f0', endColorstr='#fff1d4',GradientType=0 ); /* IE6-9 */
+}
+footer nav{}
+footer nav.footnav{
+	color: #FFF;
+	height: 60px;
+	margin-bottom:70px;
+}
+footer nav.footnav ul{
+	display: -webkit-flex;
+display: flex;
+-webkit-flex-wrap: nowrap;
+flex-wrap: nowrap;
+justify-content: space-between;
+}
+footer nav.footnav ul li{
+	width: 15%;
+	display: inline-block;
+}
+footer nav.footnav ul li a{
+	transition: 1.0s;
+	text-decoration: none;
+	color: #333;
+	display: block;
+	height: 60px;
+	line-height: 60px;
+	font-size: 14px;
+	text-align: center;
+}
+footer nav.footnav ul li a:hover{
+	color: #333;
+}
+footer nav.footnav ul li a span{
+}
+#footinfomation{
+	display:none;
+}
+.totop{
+	position: fixed;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	padding: 5px;
+	background-color: rgba(51,51,255,0.7);
+	color: #FFF;
+	bottom: 5px;
+	right: 5px;
+	border-radius: 10px;
+	text-align: center;
+}
+.notice{
+	text-align:center;
+	font-size: 80%;
+	color:#333;
+}
+#copyright{
+	color:#333;
+	text-align:center;
+	font-size: 80%;
+}
+/*********************/
+#menu{display:none;}
